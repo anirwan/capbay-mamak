@@ -32,7 +32,7 @@ class CheckoutService {
             if($rule) {
                 if ($rule->free_amount) {
                     $total_rule_quantity = $rule->min_amount + $rule->free_amount;
-                    $occurences = $quantity / $total_rule_quantity;
+                    $occurences = floor($quantity / $total_rule_quantity);
                     if ($occurences >= 1) {
                         $total -= $price * $rule->free_amount * $occurences;
                     }
