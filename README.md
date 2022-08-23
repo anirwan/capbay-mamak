@@ -13,6 +13,12 @@ Total time spent : 10.5h
 - Composer
 - Docker Desktop
 
+Once all the above has been installed, navigate to project directory and run the following commands in order:
+
+<code>composer install</code>
+
+<code>php artisan sail:install</code>
+
 ## Local startup
 
 Navigate to project directory and type in the following command:
